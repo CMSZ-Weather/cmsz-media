@@ -2,10 +2,30 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Szöveg megjelenítése</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betűformázás példa</title>
+    <style>
+        @font-face {
+            font-family: 'EgyediBetu';
+            src: url('https://github.com/CMSZ-Weather/cmsz-media/raw/refs/heads/main/webpage/RubikMoonrocks-Regular.ttf') format('truetype');
+        }
+
+        .formazott-szoveg {
+            font-family: 'EgyediBetu', Arial, sans-serif; /* Egyedi betűtípus vagy alternatíva */
+            font-size: 20px; /* Betűméret 20 pixel */
+            color: #FF6347; /* Paradicsomvörös betűszín */
+            font-weight: bold; /* Félkövér betű */
+            font-style: italic; /* Dőlt betű */
+            letter-spacing: 2px; /* Betűköz 2 pixel */
+            line-height: 1.5; /* Sorok közötti távolság 1.5 */
+            text-align: center; /* Középre igazítás */
+            text-decoration: underline; /* Aláhúzott szöveg */
+            text-transform: uppercase; /* Minden betű nagybetű lesz */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Szövegárnyék */
+        }
+    </style>
 </head>
 <body>
-    <p>Árvíztűrő <br> tükörfúrógép</p>
+    <p class="formazott-szoveg">Árvíztűrő tükörfúrógép</p>
 </body>
 </html>
